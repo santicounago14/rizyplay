@@ -10,25 +10,24 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css"/>
+  
 </head>
 <body>
   <!-- Navbar -->
  <div class="navbar">
   <div class="navbar-logo">by <strong>rizyplay</strong></div>
   <div class="navbar-links">
-    <a href="#sobre">Sobre</a>
-    <a href="#productos">Productos</a>
-    <a href="#video">Video</a>
-    <a href="#contacto">Contacto</a>
+<a href="#products">Productos</a>
+<a href="#video">Video</a>
+<a href="#contact">Contacto</a>
   </div>
   <div class="hamburger" id="hamburger">&#9776;</div>
 </div>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#sobre">Sobre</a>
-  <a href="#productos">Productos</a>
-  <a href="#video">Video</a>
-  <a href="#contacto">Contacto</a>
+<a href="#products">Productos</a>
+<a href="#video">Video</a>
+<a href="#contact">Contacto</a>
 </div>
 
 
@@ -41,7 +40,7 @@
       Tres juegos interactivos que transforman la visita a Samán en una
       experiencia educativa, divertida y sensorial.
     </p>
-    <button class="btn-primary">Ver video</button>
+<a href="#products" class="btn-primary">¡Ver productos!</a>
   </div>
 
 
@@ -91,76 +90,75 @@
 
   <!-- CTA + Stats -->
   <section class="cta-section">
-    <h2>
-      Learning through play has never been
-      <span>so fun</span>
-    </h2>
-    <p>
-      Join us in revolutionizing educational experiences for children.
-      Discover how Rizyplay is transforming visits to rice production facilities.
-    </p>
-    <div class="cta-buttons">
-      <a
-        href="assets/Rizyplay_Project_Brief.pdf"
-        download
-        class="btn-primary"
-        >⬇ Download project brief</a
-      >
-      <a href="#contact" class="btn-outline">Contact us →</a>
+  <h2>
+    Aprender jugando nunca fue
+    <span>tan divertido</span>
+  </h2>
+  <p>
+    Sumate a esta revolución en experiencias educativas para niños.
+    Descubrí cómo Rizyplay transforma las visitas a las plantas de arroz.
+  </p>
+  <div class="cta-buttons">
+    <a
+      href="https://www.instagram.com/rizyplay/"
+      download
+      class="btn-primary"
+      >¡Conocé más en nuestro Instagram!</a
+    >
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Juegos interactivos</div>
     </div>
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-value">3</div>
-        <div class="stat-label">Interactive Games</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">100%</div>
-        <div class="stat-label">Educational Value</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">∞</div>
-        <div class="stat-label">Fun Guaranteed</div>
-      </div>
+    <div class="stat">
+      <div class="stat-value">100%</div>
+      <div class="stat-label">Valor educativo</div>
     </div>
-  </section>
+    <div class="stat">
+      <div class="stat-value">∞</div>
+      <div class="stat-label">Diversión garantizada</div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Video Section -->
-  <section id="video" class="video-section">
-    <h2>Discover the story behind Rizyplay</h2>
-    <p>
-      See how these innovative games came to life and the impact they're making
-      on children's learning experiences at Samán.
-    </p>
-    <div class="video-wrapper">
-      <video controls muted loop poster="assets/video-poster.jpg">
-        <source src="assets/video.mp4" type="video/mp4" />
-        Tu navegador no soporta el elemento <code>video</code>.
-      </video>
-    </div>
-    <p class="video-caption">
-      Click to play the full experience • Available in HD quality
-    </p>
-  </section>
+<section id="video" class="video-section">
+  <h2>Conocé cómo funciona Rizyplay</h2>
+  <p>
+    Mirá el video resumen. Descubrí cómo transformamos una simple visita escolar en una experiencia educativa inolvidable.
+  </p>
+  <div class="video-wrapper">
+    <iframe 
+      src="https://www.youtube.com/embed/-UDLrdYQD3w" 
+      title="Video de Rizyplay"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+
 
   <!-- Footer -->
-  <footer class="footer" id="contact">
-    <h3>Rizyplay</h3>
-    <p>
-      Transforming educational experiences through interactive play and
-      innovative design.
-    </p>
-    <div class="partners">
-      <span>In partnership with</span>
-      <span class="partner">Samán</span>
-      <span class="divider">|</span>
-      <span class="partner">Rizyplay</span>
-    </div>
-    <hr/>
-    <p class="copyright">
-      © 2025 Rizyplay. All rights reserved. Made with care for the next
-      generation of learners.
-    </p>
-  </footer>
+ <footer class="footer" id="contact">
+  <h3>Rizyplay</h3>
+  <p>
+    Transformamos experiencias educativas a través del juego interactivo y el diseño innovador.
+  </p>
+  <div class="partners">
+    <span>En colaboración con</span>
+    <span class="partner">Samán</span>
+    <span class="divider">|</span>
+    <span class="partner">Rizyplay</span>
+  </div>
+  <hr/>
+  <p class="copyright">
+    © 2025 Rizyplay. Todos los derechos reservados. Hecho con mucho amor.
+  </p>
+</footer>
 
  <script>
   const hamburger = document.getElementById('hamburger');
