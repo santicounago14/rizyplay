@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rizyplay</title>
+  <!-- Google Font Manrope -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+ <div class="navbar">
+  <div class="navbar-logo">by <strong>rizyplay</strong></div>
+  <div class="navbar-links">
+    <a href="#sobre">Sobre</a>
+    <a href="#productos">Productos</a>
+    <a href="#video">Video</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre">Sobre</a>
+  <a href="#productos">Productos</a>
+  <a href="#video">Video</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+
+  <!-- Hero Section -->
+<section class="hero" id="about">
+  <div class="hero-content">
+    <h1><span>Rizyplay:</span></h1>
+    <h2>una nueva forma de <span>descubrir el arroz</span></h2>
+    <p>
+      Tres juegos interactivos que transforman la visita a Samán en una
+      experiencia educativa, divertida y sensorial.
+    </p>
+    <button class="btn-primary">Ver video</button>
+  </div>
+
+
+
+
+
+</section>
+
+
+  <!-- Cards Section -->
+  <section id="products" class="cards-section">
+    <h2 class="section-title">Tres experiencias únicas</h2>
+    <p>Conocé las 3 versiones disponibles</p>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/vista frontal.png" alt="Protege la cosecha"/>
+        <h3>Protege la cosecha</h3>
+        <p>Juego de reflejos para eliminar amenazas al cultivo.</p>
+        <ul>
+          <li>Puntaje en pantalla</li>
+          <li>Eliminá amenazas</li>
+          <li>Jugá sentado o en el piso</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="assets/lumibrote.png" alt="Lumibrote"/>
+        <h3>Lumibrote</h3>
+        <p>Observá crecer la planta con cada decisión correcta.</p>
+        <ul>
+          <li>Luces LED</li>
+          <li>Feedback visual</li>
+          <li>Robusto y seguro</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="assets/Semilla dorada.png" class="semilla" alt="Semilla dorada"/>
+        <h3>Semilla dorada</h3>
+        <p>Quiz sobre el momento ideal para plantar arroz.</p>
+        <ul>
+          <li>Mejor estación para sembrar</li>
+          <li>Reacciones rápidas</li>
+          <li>Para pequeños exploradores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + Stats -->
+  <section class="cta-section">
+    <h2>
+      Learning through play has never been
+      <span>so fun</span>
+    </h2>
+    <p>
+      Join us in revolutionizing educational experiences for children.
+      Discover how Rizyplay is transforming visits to rice production facilities.
+    </p>
+    <div class="cta-buttons">
+      <a
+        href="assets/Rizyplay_Project_Brief.pdf"
+        download
+        class="btn-primary"
+        >⬇ Download project brief</a
+      >
+      <a href="#contact" class="btn-outline">Contact us →</a>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Interactive Games</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Educational Value</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">∞</div>
+        <div class="stat-label">Fun Guaranteed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="video-section">
+    <h2>Discover the story behind Rizyplay</h2>
+    <p>
+      See how these innovative games came to life and the impact they're making
+      on children's learning experiences at Samán.
+    </p>
+    <div class="video-wrapper">
+      <video controls muted loop poster="assets/video-poster.jpg">
+        <source src="assets/video.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento <code>video</code>.
+      </video>
+    </div>
+    <p class="video-caption">
+      Click to play the full experience • Available in HD quality
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <h3>Rizyplay</h3>
+    <p>
+      Transforming educational experiences through interactive play and
+      innovative design.
+    </p>
+    <div class="partners">
+      <span>In partnership with</span>
+      <span class="partner">Samán</span>
+      <span class="divider">|</span>
+      <span class="partner">Rizyplay</span>
+    </div>
+    <hr/>
+    <p class="copyright">
+      © 2025 Rizyplay. All rights reserved. Made with care for the next
+      generation of learners.
+    </p>
+  </footer>
+
+ <script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
+
+</body>
+</html>
